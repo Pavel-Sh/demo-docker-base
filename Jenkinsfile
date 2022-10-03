@@ -8,7 +8,7 @@ pipeline {
                 script {
                     def props = readProperties file:'tag.properties'
                     def tag17 = props['java17tag']
-                    sh """docker build --tag 748392735374.dkr.ecr.us-west-2.amazonaws.com/base:$tag17 ."""
+                    sh """sudo docker build --tag 748392735374.dkr.ecr.us-west-2.amazonaws.com/base:$tag17 ."""
                 }
             }
         }
